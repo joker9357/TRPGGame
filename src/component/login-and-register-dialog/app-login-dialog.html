@@ -1,0 +1,30 @@
+<div fxLayout="column" fxLayoutAlign="space-around start">
+  <h1 mat-dialog-title>Sign Up a New User</h1>
+  <div mat-dialog-content>
+    <p>username</p>
+    <mat-form-field>
+      <input matInput>
+    </mat-form-field>
+    <p>password</p>
+    <mat-form-field>
+      <input matInput>
+    </mat-form-field>
+  </div>
+  <div fxFill>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <div fxFlex="50">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <button mat-button fxFlexAlign="center">Ok</button>
+        </div>
+      </div>
+      <div fxFlex="50">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <button mat-button (click)="onNoClick()" fxFlexAlign="center">canncel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxFill fxFlexAlign="center">
+    <button mat-button (click)="openDialog()">Sign Up</button>
+  </div>
+</div>

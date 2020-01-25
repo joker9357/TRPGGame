@@ -1,8 +1,9 @@
 <mat-toolbar color="primary">
-  <span>Application Title</span>
-
-  <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
-
-  <span>Right Aligned Text</span>
+  <div fxFlex="20">
+    <span class="title">Second Line</span>
+  </div>
+  <span class="example-spacer"></span>
+  <div fxFlex="8" class="LoginButton">
+    <app-login-and-register-dialog></app-login-and-register-dialog>
+  </div>
 </mat-toolbar>
